@@ -6,6 +6,18 @@
 //  Copyright © 2016年 周鹏钜. All rights reserved.
 //  首页 - 推荐
 
+/**
+    苹果的MVC是这么定义的 : 所有的对象都可以被归类为一个model, 一个view, 一个controller
+    那么网络的代码应该是放在哪里? 不知道的时候我们就放在控制器中, MVC就是这么做的
+    这样就导致了许多的代码难以管理, 控制器变的相当脓肿
+
+    MVVM 设计模式来自于微软
+    他和MVC很像, 只是引入了新的组件ViewModel(有部分代码不知道放到哪里, 放到它里面就行了)
+    ViewModel : 用户的输入验证逻辑, 视图显示逻辑, 网络请求, 不知道放到哪里的代码. 就可以放到这里
+    这些逻辑放到ViewModel中之后, 视图控制器本身就不会脓肿了
+
+*/
+
 import UIKit
 
 private let kItemMargin : CGFloat = 10
@@ -22,6 +34,7 @@ private let kHeaderViewID = "kHeaderViewID"
 class RecommendViewController: UIViewController {
 
     // MARK: - 懒加载属性
+    private lazy var recommendVM :RecommendViewModel = RecommendViewModel()
     private lazy var colltionView : UICollectionView = { [unowned self] in
     
         // 创建布局
@@ -55,6 +68,18 @@ class RecommendViewController: UIViewController {
 
         // 1. 设置UI界面
         setupUI()
+        
+        // 2. 发送网络请求
+        loadData()
+    }
+}
+
+// MARK: - 请求数据
+extension RecommendViewController {
+
+    private func loadData() {
+        
+        recommendVM.requestData()
     }
 }
 

@@ -12,7 +12,7 @@
     游戏直播:   斗鱼, 虎牙, 龙珠, 熊猫
     秀场直播:   映客,YY手机, 新浪秀场, 花椒, 千帆
 */
-  
+
 /**
     播放
         不管是手机还是电脑, 都会把采集到的视频传输到服务器端
@@ -81,6 +81,7 @@
 */
 
 import UIKit
+import Alamofire
 
 private let kTitleViewH : CGFloat = 40
 
