@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
@@ -13,14 +12,14 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="252" height="206"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9g-xO-GwT">
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9g-xO-GwT">
                         <rect key="frame" x="0.0" y="182" width="45" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="VVh-J9-rTW"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="北京是" image="ico_location">
-                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月月直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya7-Lj-Ibe">
@@ -29,7 +28,7 @@
                             <constraint firstAttribute="height" constant="16" id="Uu3-8t-woj"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="WIP-EX-q5c">
@@ -41,40 +40,47 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6666zaixin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrw-TY-KtV">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdO-Yn-reg">
                         <rect key="frame" x="187" y="5" width="60" height="20"/>
-                        <color key="backgroundColor" red="0.019607843137254902" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="QZN-x3-UNj"/>
-                            <constraint firstAttribute="height" constant="20" id="x26-Ip-WH8"/>
+                            <constraint firstAttribute="height" constant="20" id="JYy-3v-uQb"/>
+                            <constraint firstAttribute="width" constant="60" id="nk7-NR-yDy"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
+                        <state key="normal" title="6666zaixin">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="5"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
                 <constraint firstItem="WIP-EX-q5c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2h1-r6-lcw"/>
+                <constraint firstAttribute="trailing" secondItem="rdO-Yn-reg" secondAttribute="trailing" constant="5" id="Jce-52-dHo"/>
                 <constraint firstItem="Ya7-Lj-Ibe" firstAttribute="top" secondItem="WIP-EX-q5c" secondAttribute="bottom" constant="5" id="Lrl-p8-6lV"/>
                 <constraint firstAttribute="trailing" secondItem="Ya7-Lj-Ibe" secondAttribute="trailing" id="S04-Jr-bEx"/>
+                <constraint firstItem="rdO-Yn-reg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Vcb-yy-Ymy"/>
                 <constraint firstItem="Ya7-Lj-Ibe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vny-8f-99D"/>
                 <constraint firstItem="m9g-xO-GwT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Y6K-IK-FJm"/>
                 <constraint firstItem="m9g-xO-GwT" firstAttribute="top" secondItem="Ya7-Lj-Ibe" secondAttribute="bottom" id="Y6R-YT-TaN"/>
                 <constraint firstAttribute="trailing" secondItem="WIP-EX-q5c" secondAttribute="trailing" id="YXH-Me-arF"/>
-                <constraint firstItem="Mrw-TY-KtV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="e3m-dm-Dv8"/>
-                <constraint firstAttribute="trailing" secondItem="Mrw-TY-KtV" secondAttribute="trailing" constant="5" id="jVg-6a-UFv"/>
                 <constraint firstAttribute="bottom" secondItem="m9g-xO-GwT" secondAttribute="bottom" constant="10" id="oEX-xR-KPm"/>
                 <constraint firstItem="WIP-EX-q5c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sX4-zR-z13"/>
             </constraints>
             <size key="customSize" width="252" height="206"/>
+            <connections>
+                <outlet property="buttonCity" destination="m9g-xO-GwT" id="NrI-lC-Osr"/>
+                <outlet property="buttonOnline" destination="rdO-Yn-reg" id="AtR-6V-kca"/>
+                <outlet property="imageViewPlaceHoder" destination="WIP-EX-q5c" id="R5D-ou-grZ"/>
+                <outlet property="labelNickname" destination="Ya7-Lj-Ibe" id="hRX-6X-gFE"/>
+            </connections>
             <point key="canvasLocation" x="530" y="373"/>
         </collectionViewCell>
     </objects>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
@@ -23,7 +22,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鹏钜为您直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgF-0J-SKI">
                         <rect key="frame" x="19" y="148" width="237" height="13.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="Jqx-te-Et3">
@@ -42,7 +41,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsT-P7-FTB">
-                        <rect key="frame" x="196" y="122" width="60" height="16"/>
+                        <rect key="frame" x="196" y="3" width="60" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="666直播" image="Image_online"/>
                     </button>
@@ -57,14 +56,20 @@
                 <constraint firstItem="NyC-lu-NOV" firstAttribute="bottom" secondItem="Jqx-te-Et3" secondAttribute="bottom" constant="-5" id="CrY-cA-glC"/>
                 <constraint firstItem="YXX-yq-7Vx" firstAttribute="top" secondItem="Jqx-te-Et3" secondAttribute="bottom" constant="5" id="E1r-ea-nTU"/>
                 <constraint firstAttribute="trailing" secondItem="Jqx-te-Et3" secondAttribute="trailing" id="H5O-We-4XL"/>
-                <constraint firstItem="qsT-P7-FTB" firstAttribute="trailing" secondItem="Jqx-te-Et3" secondAttribute="trailing" constant="-5" id="Hnf-6V-9oL"/>
+                <constraint firstItem="qsT-P7-FTB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="Jfk-YS-Eiv"/>
                 <constraint firstItem="RgF-0J-SKI" firstAttribute="leading" secondItem="YXX-yq-7Vx" secondAttribute="trailing" constant="5" id="QCB-Px-sb4"/>
                 <constraint firstAttribute="trailing" secondItem="RgF-0J-SKI" secondAttribute="trailing" constant="5" id="Vc4-eh-YtC"/>
                 <constraint firstItem="Jqx-te-Et3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YRe-vA-WAB"/>
-                <constraint firstItem="qsT-P7-FTB" firstAttribute="bottom" secondItem="Jqx-te-Et3" secondAttribute="bottom" constant="-5" id="Yqc-vz-uML"/>
                 <constraint firstItem="RgF-0J-SKI" firstAttribute="centerY" secondItem="YXX-yq-7Vx" secondAttribute="centerY" id="gdq-Ng-r28"/>
+                <constraint firstAttribute="trailing" secondItem="qsT-P7-FTB" secondAttribute="trailing" constant="5" id="odl-7O-rwp"/>
             </constraints>
             <size key="customSize" width="261" height="172"/>
+            <connections>
+                <outlet property="buttonOnline" destination="qsT-P7-FTB" id="Nq1-Na-sZD"/>
+                <outlet property="imageViewPlaceHoder" destination="Jqx-te-Et3" id="2nf-Xx-7Oi"/>
+                <outlet property="labelNickname" destination="RgF-0J-SKI" id="0f8-1A-hQ7"/>
+                <outlet property="labelRoomname" destination="NyC-lu-NOV" id="pJz-he-QaU"/>
+            </connections>
             <point key="canvasLocation" x="538.5" y="403"/>
         </collectionViewCell>
     </objects>

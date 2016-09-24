@@ -29,8 +29,12 @@
 		CB9EF2A61D94FEEF003C5BD3 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9EF2A51D94FEEF003C5BD3 /* Live.storyboard */; };
 		CB9EF2A81D94FEFD003C5BD3 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9EF2A71D94FEFD003C5BD3 /* Follow.storyboard */; };
 		CB9EF2AA1D94FF05003C5BD3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9EF2A91D94FF05003C5BD3 /* Profile.storyboard */; };
+		CBB049011D965C5A000AFAE5 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB049001D965C5A000AFAE5 /* CollectionBaseCell.swift */; };
 		CBF5194D1D951E8700C08ECE /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF5194C1D951E8700C08ECE /* NetworkTools.swift */; };
 		CBF519501D9524B400C08ECE /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF5194F1D9524B400C08ECE /* RecommendViewModel.swift */; };
+		CBF519541D952A0600C08ECE /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF519531D952A0600C08ECE /* NSDate-Extension.swift */; };
+		CBF519561D95300800C08ECE /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF519551D95300800C08ECE /* AnchorGroup.swift */; };
+		CBF5195A1D95337300C08ECE /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF519591D95337300C08ECE /* AnchorModel.swift */; };
 		CBFD31781D916B9E00EFDC1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD31771D916B9E00EFDC1E /* AppDelegate.swift */; };
 		CBFD317D1D916B9E00EFDC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFD317B1D916B9E00EFDC1E /* Main.storyboard */; };
 		CBFD317F1D916B9E00EFDC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFD317E1D916B9E00EFDC1E /* Assets.xcassets */; };
@@ -83,8 +87,12 @@
 		CB9EF2A51D94FEEF003C5BD3 /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 		CB9EF2A71D94FEFD003C5BD3 /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		CB9EF2A91D94FF05003C5BD3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		CBB049001D965C5A000AFAE5 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		CBF5194C1D951E8700C08ECE /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		CBF5194F1D9524B400C08ECE /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		CBF519531D952A0600C08ECE /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		CBF519551D95300800C08ECE /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		CBF519591D95337300C08ECE /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		CBFD31741D916B9E00EFDC1E /* 斗鱼直播.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "斗鱼直播.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFD31771D916B9E00EFDC1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBFD317C1D916B9E00EFDC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -271,6 +279,8 @@
 		CB9EF27A1D94FE43003C5BD3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CBF519551D95300800C08ECE /* AnchorGroup.swift */,
+				CBF519591D95337300C08ECE /* AnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,12 +288,13 @@
 		CB9EF27B1D94FE43003C5BD3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CB9EF2801D94FE43003C5BD3 /* PageContentView.swift */,
+				CB9EF2811D94FE43003C5BD3 /* PageTitleView.swift */,
 				CB9EF27C1D94FE43003C5BD3 /* CollectionNormalCell.swift */,
 				CB9EF27D1D94FE43003C5BD3 /* CollectionNormalCell.xib */,
 				CB9EF27E1D94FE43003C5BD3 /* CollectionPrettyCell.swift */,
 				CB9EF27F1D94FE43003C5BD3 /* CollectionPrettyCell.xib */,
-				CB9EF2801D94FE43003C5BD3 /* PageContentView.swift */,
-				CB9EF2811D94FE43003C5BD3 /* PageTitleView.swift */,
+				CBB049001D965C5A000AFAE5 /* CollectionBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +347,7 @@
 			children = (
 				CB9EF28A1D94FE43003C5BD3 /* UIBarButtonItem-Extension.swift */,
 				CB9EF28B1D94FE43003C5BD3 /* UIColor-Extension.swift */,
+				CBF519531D952A0600C08ECE /* NSDate-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -610,13 +622,17 @@
 				CB9EF2971D94FE43003C5BD3 /* PageContentView.swift in Sources */,
 				CB9EF29B1D94FE43003C5BD3 /* UIBarButtonItem-Extension.swift in Sources */,
 				CBF5194D1D951E8700C08ECE /* NetworkTools.swift in Sources */,
+				CBF519541D952A0600C08ECE /* NSDate-Extension.swift in Sources */,
 				CB9EF2951D94FE43003C5BD3 /* CollectionPrettyCell.swift in Sources */,
+				CBB049011D965C5A000AFAE5 /* CollectionBaseCell.swift in Sources */,
 				CB9EF2991D94FE43003C5BD3 /* ProfileViewController.swift in Sources */,
 				CB9EF28E1D94FE43003C5BD3 /* RecommendViewController.swift in Sources */,
 				CB9EF28F1D94FE43003C5BD3 /* RecommendHeaderView.swift in Sources */,
 				CB9EF28C1D94FE43003C5BD3 /* FollowViewController.swift in Sources */,
+				CBF5195A1D95337300C08ECE /* AnchorModel.swift in Sources */,
 				CB9EF2911D94FE43003C5BD3 /* LiveViewController.swift in Sources */,
 				CB9EF28D1D94FE43003C5BD3 /* HomeViewController.swift in Sources */,
+				CBF519561D95300800C08ECE /* AnchorGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

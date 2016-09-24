@@ -10,10 +10,16 @@ import UIKit
 
 class RecommendHeaderView: UICollectionReusableView {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        
-    }
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var imageViewIcon: UIImageView!
     
+    var group : AnchorGroup? {
+    
+        didSet {
+        
+            labelTitle.text = group?.tag_name
+            
+            imageViewIcon.image = UIImage(named: group?.icon_name ?? "home_header_normal")
+        }
+    }
 }
