@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB92FC071D96991400A2C171 /* RecommendGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB92FC051D96991400A2C171 /* RecommendGameCell.swift */; };
+		CB92FC081D96991400A2C171 /* RecommendGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB92FC061D96991400A2C171 /* RecommendGameCell.xib */; };
 		CB9EF28C1D94FE43003C5BD3 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EF2671D94FE43003C5BD3 /* FollowViewController.swift */; };
 		CB9EF28D1D94FE43003C5BD3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EF26C1D94FE43003C5BD3 /* HomeViewController.swift */; };
 		CB9EF28E1D94FE43003C5BD3 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EF26D1D94FE43003C5BD3 /* RecommendViewController.swift */; };
@@ -30,6 +32,13 @@
 		CB9EF2A81D94FEFD003C5BD3 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9EF2A71D94FEFD003C5BD3 /* Follow.storyboard */; };
 		CB9EF2AA1D94FF05003C5BD3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9EF2A91D94FF05003C5BD3 /* Profile.storyboard */; };
 		CBB049011D965C5A000AFAE5 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB049001D965C5A000AFAE5 /* CollectionBaseCell.swift */; };
+		CBB049051D96621E000AFAE5 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB049041D96621E000AFAE5 /* RecommendCycleView.swift */; };
+		CBB049071D966231000AFAE5 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB049061D966231000AFAE5 /* RecommendCycleView.xib */; };
+		CBCFEF201D966ECC00B4D79E /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFEF1F1D966ECC00B4D79E /* CycleModel.swift */; };
+		CBCFEF231D96732400B4D79E /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFEF211D96732400B4D79E /* CollectionCycleCell.swift */; };
+		CBCFEF241D96732400B4D79E /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCFEF221D96732400B4D79E /* CollectionCycleCell.xib */; };
+		CBCFEF261D96939500B4D79E /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFEF251D96939500B4D79E /* RecommendGameView.swift */; };
+		CBCFEF281D9693A100B4D79E /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBCFEF271D9693A100B4D79E /* RecommendGameView.xib */; };
 		CBF5194D1D951E8700C08ECE /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF5194C1D951E8700C08ECE /* NetworkTools.swift */; };
 		CBF519501D9524B400C08ECE /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF5194F1D9524B400C08ECE /* RecommendViewModel.swift */; };
 		CBF519541D952A0600C08ECE /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF519531D952A0600C08ECE /* NSDate-Extension.swift */; };
@@ -65,6 +74,8 @@
 		280A46EAD87C44DA5A78328B /* Pods-斗鱼直播.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼直播.debug.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼直播/Pods-斗鱼直播.debug.xcconfig"; sourceTree = "<group>"; };
 		453378EAED09F11BA882FAF1 /* Pods_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C783C78945ECCB2A80C0D476 /* Pods-斗鱼直播.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-斗鱼直播.release.xcconfig"; path = "Pods/Target Support Files/Pods-斗鱼直播/Pods-斗鱼直播.release.xcconfig"; sourceTree = "<group>"; };
+		CB92FC051D96991400A2C171 /* RecommendGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendGameCell.swift; sourceTree = "<group>"; };
+		CB92FC061D96991400A2C171 /* RecommendGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendGameCell.xib; sourceTree = "<group>"; };
 		CB9EF2671D94FE43003C5BD3 /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		CB9EF26C1D94FE43003C5BD3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CB9EF26D1D94FE43003C5BD3 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +99,13 @@
 		CB9EF2A71D94FEFD003C5BD3 /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		CB9EF2A91D94FF05003C5BD3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		CBB049001D965C5A000AFAE5 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
+		CBB049041D96621E000AFAE5 /* RecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		CBB049061D966231000AFAE5 /* RecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
+		CBCFEF1F1D966ECC00B4D79E /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
+		CBCFEF211D96732400B4D79E /* CollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
+		CBCFEF221D96732400B4D79E /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
+		CBCFEF251D96939500B4D79E /* RecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
+		CBCFEF271D9693A100B4D79E /* RecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		CBF5194C1D951E8700C08ECE /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		CBF5194F1D9524B400C08ECE /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		CBF519531D952A0600C08ECE /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
@@ -211,6 +229,7 @@
 		CB9EF26E1D94FE43003C5BD3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CBCFEF1F1D966ECC00B4D79E /* CycleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +239,14 @@
 			children = (
 				CB9EF2701D94FE43003C5BD3 /* RecommendHeaderView.swift */,
 				CB9EF2711D94FE43003C5BD3 /* RecommendHeaderView.xib */,
+				CBB049041D96621E000AFAE5 /* RecommendCycleView.swift */,
+				CBB049061D966231000AFAE5 /* RecommendCycleView.xib */,
+				CBCFEF211D96732400B4D79E /* CollectionCycleCell.swift */,
+				CBCFEF221D96732400B4D79E /* CollectionCycleCell.xib */,
+				CBCFEF251D96939500B4D79E /* RecommendGameView.swift */,
+				CBCFEF271D9693A100B4D79E /* RecommendGameView.xib */,
+				CB92FC051D96991400A2C171 /* RecommendGameCell.swift */,
+				CB92FC061D96991400A2C171 /* RecommendGameCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -534,11 +561,15 @@
 				CBFD31821D916B9E00EFDC1E /* LaunchScreen.storyboard in Resources */,
 				CB9EF2961D94FE43003C5BD3 /* CollectionPrettyCell.xib in Resources */,
 				CBFD317F1D916B9E00EFDC1E /* Assets.xcassets in Resources */,
+				CBCFEF281D9693A100B4D79E /* RecommendGameView.xib in Resources */,
 				CB9EF2941D94FE43003C5BD3 /* CollectionNormalCell.xib in Resources */,
 				CB9EF2A81D94FEFD003C5BD3 /* Follow.storyboard in Resources */,
 				CB9EF2901D94FE43003C5BD3 /* RecommendHeaderView.xib in Resources */,
+				CBB049071D966231000AFAE5 /* RecommendCycleView.xib in Resources */,
 				CBFD317D1D916B9E00EFDC1E /* Main.storyboard in Resources */,
+				CBCFEF241D96732400B4D79E /* CollectionCycleCell.xib in Resources */,
 				CB9EF2A61D94FEEF003C5BD3 /* Live.storyboard in Resources */,
+				CB92FC081D96991400A2C171 /* RecommendGameCell.xib in Resources */,
 				CB9EF2A01D94FED1003C5BD3 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,10 +649,13 @@
 				CB9EF2981D94FE43003C5BD3 /* PageTitleView.swift in Sources */,
 				CB9EF29A1D94FE43003C5BD3 /* Common.swift in Sources */,
 				CBFD31781D916B9E00EFDC1E /* AppDelegate.swift in Sources */,
+				CB92FC071D96991400A2C171 /* RecommendGameCell.swift in Sources */,
 				CB9EF2931D94FE43003C5BD3 /* CollectionNormalCell.swift in Sources */,
 				CB9EF2971D94FE43003C5BD3 /* PageContentView.swift in Sources */,
+				CBCFEF231D96732400B4D79E /* CollectionCycleCell.swift in Sources */,
 				CB9EF29B1D94FE43003C5BD3 /* UIBarButtonItem-Extension.swift in Sources */,
 				CBF5194D1D951E8700C08ECE /* NetworkTools.swift in Sources */,
+				CBCFEF261D96939500B4D79E /* RecommendGameView.swift in Sources */,
 				CBF519541D952A0600C08ECE /* NSDate-Extension.swift in Sources */,
 				CB9EF2951D94FE43003C5BD3 /* CollectionPrettyCell.swift in Sources */,
 				CBB049011D965C5A000AFAE5 /* CollectionBaseCell.swift in Sources */,
@@ -632,6 +666,8 @@
 				CBF5195A1D95337300C08ECE /* AnchorModel.swift in Sources */,
 				CB9EF2911D94FE43003C5BD3 /* LiveViewController.swift in Sources */,
 				CB9EF28D1D94FE43003C5BD3 /* HomeViewController.swift in Sources */,
+				CBB049051D96621E000AFAE5 /* RecommendCycleView.swift in Sources */,
+				CBCFEF201D966ECC00B4D79E /* CycleModel.swift in Sources */,
 				CBF519561D95300800C08ECE /* AnchorGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

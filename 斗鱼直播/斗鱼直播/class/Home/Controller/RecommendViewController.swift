@@ -15,7 +15,10 @@
     他和MVC很像, 只是引入了新的组件ViewModel(有部分代码不知道放到哪里, 放到它里面就行了)
     ViewModel : 用户的输入验证逻辑, 视图显示逻辑, 网络请求, 不知道放到哪里的代码. 就可以放到这里
     这些逻辑放到ViewModel中之后, 视图控制器本身就不会脓肿了
+*/
 
+/**
+    
 */
 
 import UIKit
@@ -26,6 +29,9 @@ private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3.2
 
 private let kHeaderViewH : CGFloat = 50
+
+private let kCycleViewH = WIDTH * 3 / 8
+private let kGameViewH : CGFloat = 90
 
 private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
@@ -61,6 +67,21 @@ class RecommendViewController: UIViewController {
         
         return colltionView
     }()
+    private lazy var cycleView : RecommendCycleView = {
+    
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: WIDTH, height: kCycleViewH)
+        
+        return cycleView
+    }()
+    
+    private lazy var gameView : RecommendGameView = {
+    
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: WIDTH, height: kGameViewH)
+        
+        return gameView
+    }()
     
     // MARK: - 系统属性
     override func viewDidLoad() {
@@ -78,10 +99,17 @@ class RecommendViewController: UIViewController {
 extension RecommendViewController {
 
     private func loadData() {
-        
+        // 1. 请求我们的推荐数据
         recommendVM.requestData { () -> () in
-            
             self.colltionView.reloadData()
+            
+            // 2. 将数据传递给GameView
+            self.gameView.groups = self.recommendVM.anchorGroups
+        }
+        
+        // 2. 请求轮播数据
+        recommendVM.requestCycleData { () -> () in
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
         }
     }
 }
@@ -93,6 +121,17 @@ extension RecommendViewController {
     
         // 1. 将colltionView添加到控制器的view中
         view.addSubview(colltionView)
+        
+        // 2. 将cycleView添加到colltionView中
+        colltionView.addSubview(cycleView)
+        
+        // 3. 添加gameview
+        colltionView.addSubview(gameView)
+        
+        // 3. 设置collection的内边距
+        colltionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
+        
+        
     }
 }
 

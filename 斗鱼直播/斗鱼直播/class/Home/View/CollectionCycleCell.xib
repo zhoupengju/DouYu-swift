@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionCycleCell" customModule="斗鱼直播" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="267" height="158"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="267" height="158"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hu3-SD-zmI">
+                        <rect key="frame" x="0.0" y="0.0" width="267" height="158"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsZ-aA-eaP">
+                        <rect key="frame" x="0.0" y="128" width="267" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="hahhah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12V-dt-ohZ">
+                                <rect key="frame" x="15" y="5" width="57" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="12V-dt-ohZ" firstAttribute="centerY" secondItem="nsZ-aA-eaP" secondAttribute="centerY" id="IJG-E8-Wn3"/>
+                            <constraint firstItem="12V-dt-ohZ" firstAttribute="leading" secondItem="nsZ-aA-eaP" secondAttribute="leading" constant="15" id="ZYa-sa-nUw"/>
+                            <constraint firstAttribute="height" constant="30" id="dof-Pl-LAo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nsZ-aA-eaP" secondAttribute="bottom" id="18q-IF-9Gb"/>
+                <constraint firstItem="hu3-SD-zmI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FEV-qd-OTc"/>
+                <constraint firstAttribute="trailing" secondItem="nsZ-aA-eaP" secondAttribute="trailing" id="FKy-ix-rEJ"/>
+                <constraint firstItem="hu3-SD-zmI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MhH-Cn-cqa"/>
+                <constraint firstAttribute="bottom" secondItem="hu3-SD-zmI" secondAttribute="bottom" id="T7g-OI-Lcz"/>
+                <constraint firstItem="nsZ-aA-eaP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zoi-lc-zyQ"/>
+                <constraint firstAttribute="trailing" secondItem="hu3-SD-zmI" secondAttribute="trailing" id="um1-D5-Vbx"/>
+            </constraints>
+            <size key="customSize" width="267" height="158"/>
+            <connections>
+                <outlet property="imageview" destination="hu3-SD-zmI" id="7Rc-ln-xtk"/>
+                <outlet property="title" destination="12V-dt-ohZ" id="Kpn-PK-yCP"/>
+            </connections>
+            <point key="canvasLocation" x="191.5" y="244"/>
+        </collectionViewCell>
+    </objects>
+</document>

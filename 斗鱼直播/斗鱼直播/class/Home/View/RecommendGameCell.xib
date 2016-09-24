@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecommendGameCell" customModule="斗鱼直播" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="InV-NT-8uV">
+                        <rect key="frame" x="15.5" y="15" width="49" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="InV-NT-8uV" secondAttribute="height" multiplier="1:1" id="T57-4x-a0G"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="23"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YUEYUE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t46-2r-f4J">
+                        <rect key="frame" x="14" y="67" width="51.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="bdS-8b-bQE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="InV-NT-8uV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="BZg-y6-FSz"/>
+                <constraint firstItem="t46-2r-f4J" firstAttribute="top" secondItem="InV-NT-8uV" secondAttribute="bottom" constant="5" id="H08-Xa-fLK"/>
+                <constraint firstItem="InV-NT-8uV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="KNd-Aw-sWN"/>
+                <constraint firstItem="t46-2r-f4J" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="N1a-AO-H2a"/>
+                <constraint firstAttribute="bottom" secondItem="t46-2r-f4J" secondAttribute="bottom" constant="5" id="XVn-KR-fCY"/>
+            </constraints>
+            <size key="customSize" width="163" height="118"/>
+            <connections>
+                <outlet property="imageIcon" destination="InV-NT-8uV" id="ZDp-ff-mRu"/>
+                <outlet property="labelName" destination="t46-2r-f4J" id="fZW-zy-gFa"/>
+            </connections>
+            <point key="canvasLocation" x="383" y="376"/>
+        </collectionViewCell>
+    </objects>
+</document>
